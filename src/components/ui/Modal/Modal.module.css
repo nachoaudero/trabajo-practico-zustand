@@ -1,0 +1,50 @@
+.modalContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: brightness(90%) blur(2px);
+}
+
+.popUp {
+  background-color: #fff;
+  box-shadow: 5px 2px 10px #3b3b3b;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form input,
+textarea {
+  padding: 0.3rem;
+  resize: none;
+}
+
+.inputsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.buttonsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
