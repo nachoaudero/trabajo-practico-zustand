@@ -1,6 +1,6 @@
 import Swal from "sweetalert2";
 import { useShallow } from "zustand/shallow";
-import { getAllTareas, postTarea, putTarea } from "../http/tareas";
+import { deleteTarea, getAllTareas, postTarea, putTarea } from "../http/tareas";
 import { tareaStore } from "../store/tareaStore";
 import type { ITarea } from "../types/iTarea";
 
@@ -56,7 +56,7 @@ export const useTareas = () => {
     }
   };
 
-  const deleteTarea = async (id: string) => {
+  const eliminarTarea = async (id: string) => {
     const estadoPrev = tareas.find((tarea) => tarea.id === id);
 
     const confirm = await Swal.fire({
@@ -82,5 +82,5 @@ export const useTareas = () => {
     }
   };
 
-  return { tareas, getTareas, createTarea, editTarea, deleteTarea };
+  return { tareas, getTareas, createTarea, editTarea, eliminarTarea };
 };

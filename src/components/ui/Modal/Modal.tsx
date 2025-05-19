@@ -39,7 +39,10 @@ export const Modal = ({ close }: IModal) => {
     if (tareaActiva) {
       editTarea(formValues);
     } else {
-      createTarea({ ...formValues, id: new Date().toDateString() });
+      createTarea({
+        ...formValues,
+        id: crypto.randomUUID(),
+      });
     }
 
     setTareaActiva(null);

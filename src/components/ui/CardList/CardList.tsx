@@ -8,10 +8,10 @@ type ICardList = {
 };
 
 export const CardList = ({ open, tarea }: ICardList) => {
-  const { deleteTarea } = useTareas();
+  const { eliminarTarea } = useTareas();
 
   const handleDelete = () => {
-    deleteTarea(tarea.id!);
+    eliminarTarea(tarea.id!);
   };
 
   const handleEdit = () => {

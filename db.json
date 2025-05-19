@@ -1,22 +1,10 @@
 {
   "tareas": [
     {
-      "id": "1",
-      "titulo": "Tareaaaaaaa",
-      "descripcion": "Descripcion de la tarea",
-      "fechaLimite": "2025-05-28"
-    },
-    {
-      "id": "2",
-      "titulo": "Tarea",
-      "descripcion": "Descripcion de la tarea",
-      "fechaLimite": "2025-05-14"
-    },
-    {
-      "id": "Mon May 19 2025",
-      "titulo": "1",
-      "descripcion": "1",
-      "fechaLimite": "2001-01-01"
+      "titulo": "Tarea numero 1 EDITADA",
+      "descripcion": "Descripcion de la tarea numero 1 EDITADA",
+      "fechaLimite": "2025-05-30",
+      "id": "2a30d47f-dbcf-4c8f-81d9-9abe77863b48"
     }
   ]
 }
